@@ -7,7 +7,7 @@ Created on Nov 1, 2014
 class MyClass:
     def __init__(self):
         self.x = 0
-###1
+###12
 y = MyClass()
 z = MyClass()
 print y.x
