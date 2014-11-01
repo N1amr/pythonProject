@@ -1,14 +1,6 @@
-'''
-Created on Nov 1, 2014
+def HexToString(s):
+    n = 2
+    return "".join([chr((int(s[i:i + n], 16)) % 256) for i in range(0, len(s) - n + 1, n)])
 
-@author: N1amr
-'''
-
-class MyClass:
-    def __init__(self):
-        self.x = 0
-
-y = MyClass()
-z = MyClass()
-print y.x
-print z.x
+s = '70726F6772616D6D6572'
+print HexToString(s);
