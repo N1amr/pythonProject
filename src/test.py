@@ -19,11 +19,9 @@ def BinaryToHex(b):
         r = r[:-1]
     return r
 
-h = '696E746572657374656420696E2073656375726974792C63727970746F6772617068792C7068696C6F736F7068792C706879736963732C617374726F6E6F6D79'
+h = '49207468696E6B206974207761736E2774206861726420746F20726561642074686973203A44'
 b = '010111000101110000110000'
-s = 'If you can read this, you are smart'
-ss = 'abx'
-print (ss)
+s = "I think it wasn't hard to read this :D"
 print (StringToHex(s))
 print HexToString(h)
 print (HexToString(BinaryToHex(b)))
