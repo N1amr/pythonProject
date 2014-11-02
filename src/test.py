@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # coding: UTF-8
 from string import upper
 def HexToString(h):
@@ -28,8 +27,3 @@ print (ss)
 print (StringToHex(s))
 print HexToString(h)
 print (HexToString(BinaryToHex(b)))
-=======
-import math
-
-print math.log(64,2);
->>>>>>> origin/master
