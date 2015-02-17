@@ -1,3 +1,31 @@
+# Primes
+primeFlags = [False, False]
+def initPrimes(n):
+    for i in range(n - 2):
+        primeFlags.append(True);
+    for i in range(2, n):
+        if(primeFlags[i] == True):
+            for j in range (2 * i, n, i):
+                primeFlags[j] = False;
+
+def isPrime(n):
+    return primeFlags[n]
+
+# Primes 2
+def initPrimes(n):
+    primeFlags = n * [True]
+    primeFlags[0] = False
+    primeFlags[1] = False
+    for i in range(2, n):
+        if(primeFlags[i] == True):
+            for j in range (2 * i, n, i):
+                primeFlags[j] = False;
+    return primeFlags
+
+def isPrime(n):
+    return primeFlags[n]
+
+
 # coding: UTF-8
 from string import upper
 def HexToString(h):
