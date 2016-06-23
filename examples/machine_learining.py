@@ -14,4 +14,4 @@ y = [1, 2]
 nb.fit(x, y)
 
 test = -2
-print nb.predict(test)
+print (nb.predict(test))
